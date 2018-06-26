@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>My Landing Page for FCC</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <header>
+
+    <nav class="" id="nav-bar" role="navigation">
+        <div class="logo">
+            <img src="https://source.unsplash.com/TJgn1_dcE1g" alt="logo" href="https://unsplash.com/photos/2ZBK_-eqkwA" id="logo">
+          </div>
+      <ul class="nav-ul" id="menu">
+        <li class="nav-link" id="about-nav">
+          <a href="#landing" class="smoothScroll">about</a>
+        </li>
+        </a>
+        <li class="nav-link" id="video-nav">
+          <a href="#video" class="smoothScroll">video</a>
+        </li>
+        </a>
+        <li class="nav-link" id="feature-nav">
+          <a href="#features" class="smoothScroll">feature</a>
+        </li>
+        </a>
+        <li class="nav-link" id="order-nav">
+          <a href="#email" class="smoothScroll">order</a>
+        </li>
+        </a>
+        <li class="nav-link" id="info-nav">
+          <a href="#info" class="smoothScroll">info</a>
+        </li>
+        </a>
+      </ul>
+      <div id="hamburger" onclick="hamburgerMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+    </nav>
+  </header>
+
+  </nav>
+  <main>
+    <!-- Landing area -->
+    <div id="landing">
+      <div id="landing-text">
+        <div id="landing-text-inner">
+          <h1>Puppies Inc.</h1>
+          <h2>Most technologically advanced puppies you ever seen!</h2>
+          <a href="#images" class="btn smoothScroll" id="view-puppies">Puppies</a>
+        </div>
+      </div>
+      <div id="landing-image">
+      </div>
+    </div>
+    <div id="video">
+      <iframe width="500" height="465" src="https://www.youtube.com/embed/Sfz4VF-ln0U" frameborder="0" allow="autoplay; encrypted-media"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div id="images">
+      <div id="header">
+
+        <h2 id="features">Our Puppies</h2>
+      </div>
+
+      <img src="https://source.unsplash.com/1600x900/?puppy,puppies" alt="">
+      <div class="feature">
+        <h2>Puppy One</h2>
+        <p class="text-reg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, modi.</p>
+      </div>
+      <img src="https://source.unsplash.com/1600x900/?puppy,young" alt="">
+      <div class="feature">
+        <h2>Puppy Two</h2>
+        <p class="text-reg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, modi.</p>
+      </div>
+      <img src="https://source.unsplash.com/1600x900/?puppy,dog" alt="">
+      <div class="feature">
+        <h2>Puppy Three</h2>
+        <p class="text-reg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, modi.</p>
+      </div>
+      <img src="https://source.unsplash.com/1600x900/?puppy,funny" alt="">
+      <div class="feature">
+        <h2>Puppy Four</h2>
+        <p class="text-reg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, modi.</p>
+      </div>
+      <img src="https://source.unsplash.com/1600x900/?puppy,dirty" alt="">
+      <div class="feature">
+        <h2>Puppy Five</h2>
+        <p class="text-reg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, modi.</p>
+      </div>
+    </div>
+  </main>
+  <form action="" id="email">
+    <h3 class="forEmail">Pre-Order</h3>
+    <p class="text-gen">If you want to preorder some of our Puppies, leave us your email and we will contact with your once we will get the new batch.</p>
+      <input type="email" placeholder="your.email@example.com">
+      <button type="submit" id="send">send</button>
+    </form>
+    </form>
+
+  <footer id="info" class="toScroll">
+    <h3>Contact Us</h3>
+    <p>Email or call uss to set up an appointment</p>
+    <p>Email:
+      <strong>eample@example.test</strong>
+    </p>
+    <p>Phone:
+      <strong>206-000-0000</strong>
+    </p>
+    <div id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d688556.5478885103!2d-122.342064!3d47.613028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C+WA!5e0!3m2!1sen!2sus!4v1529694483993"
+        width="400" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </footer>
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+
+
+</html>
