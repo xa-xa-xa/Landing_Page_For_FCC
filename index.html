@@ -14,11 +14,11 @@
   <!-- navbar -->
   <header>
 
-    <nav class="" id="nav-bar" role="navigation">
-        <div class="logo">
-            <img src="https://source.unsplash.com/TJgn1_dcE1g" alt="logo" href="https://unsplash.com/photos/2ZBK_-eqkwA" id="logo">
-          </div>
-      <ul class="nav-ul" id="menu">
+    <nav class="topnav" id="nav-bar" role="navigation">
+      <div class="logo">
+        <img src="https://source.unsplash.com/TJgn1_dcE1g" alt="logo" href="https://unsplash.com/photos/2ZBK_-eqkwA" id="logo">
+      </div>
+      <ul class="nav-ul" id="top-menu">
         <li class="nav-link" id="about-nav">
           <a href="#landing" class="smoothScroll">about</a>
         </li>
@@ -40,11 +40,12 @@
         </li>
         </a>
       </ul>
-      <div id="hamburger" onclick="hamburgerMenu(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
+      <div id="hamburger" class="topnav"onclick="hamburgerMenu(this)">
+          <a href="javascript:void(0);" class="icon" onclick="unfoldMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
     </nav>
   </header>
 
@@ -63,8 +64,9 @@
       </div>
     </div>
     <div id="video">
-      <iframe width="800" height="600" src="https://www.youtube.com/embed/Sfz4VF-ln0U" frameborder="0" allow="autoplay; encrypted-media"
-        allowfullscreen>
+      <iframe width="1245" height="700" src="https://www.youtube.com/embed/s5-oJbs5izQ" frameborder="0" allow="autoplay; encrypted-media"
+        allowfullscreen></iframe>
+      allowfullscreen>
       </iframe>
     </div>
     <div id="images">
@@ -102,11 +104,12 @@
   </main>
   <form action="" id="email">
     <h3 class="forEmail">Pre-Order</h3>
-    <p class="text-gen">If you want to preorder some of our Puppies, leave us your email and we will contact with your once we will get the new batch.</p>
-      <input type="email" placeholder="your.email@example.com">
-      <button type="submit" id="send">send</button>
-    </form>
-    </form>
+    <p class="text-gen">If you want to preorder some of our Puppies, leave us your email and we will contact with your once we will get the new
+      batch.</p>
+    <input type="email" placeholder="your.email@example.com">
+    <button type="submit" id="send">send</button>
+  </form>
+  </form>
 
   <footer id="info" class="toScroll">
     <h3>Contact Us</h3>

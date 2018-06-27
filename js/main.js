@@ -22,3 +22,12 @@ $(function() {
 const hamburgerMenu = function (x) {
    x.classList.toggle("change");
 } 
+// responsive menu //
+function unfoldMenu() {
+  var y = document.getElementById("hamburger");
+  if (y.className === "topnav") {
+      y.className += " responsive";
+  } else {
+      y.className = "topnav";
+  }
+}
