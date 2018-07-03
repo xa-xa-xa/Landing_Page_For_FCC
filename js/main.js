@@ -10,7 +10,7 @@ $(function() {
       console.log(this.hash);
       if (target.length) {
         $('html,body').animate({
-          scrollTop: target.offset().top -50
+          scrollTop: target.offset().top -80
         }, 1000); // The number here represents the speed of the scroll in milliseconds
         return false;
       }
@@ -21,13 +21,13 @@ $(function() {
 // hamburger Menu //
 const hamburgerMenu = function (x) {
    x.classList.toggle("change");
+   newFunction(x);
 } 
+
+
+
 // responsive menu //
-function unfoldMenu() {
-  var y = document.getElementById("hamburger");
-  if (y.className === "topnav") {
-      y.className += " responsive";
-  } else {
-      y.className = "topnav";
-  }
-}
+
+$('.menu-btn').click(function(){
+  $('nav').toggleClass('nav-open');
+});

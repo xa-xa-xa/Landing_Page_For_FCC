@@ -12,44 +12,34 @@
 
 <body>
   <!-- navbar -->
-  <header>
-
-    <nav class="topnav" id="nav-bar" role="navigation">
-      <div class="logo">
-        <img src="https://source.unsplash.com/TJgn1_dcE1g" alt="logo" href="https://unsplash.com/photos/2ZBK_-eqkwA" id="logo">
-      </div>
-      <ul class="nav-ul" id="top-menu">
-        <li class="nav-link" id="about-nav">
-          <a href="#landing" class="smoothScroll">about</a>
+  <header id="header">
+    <img src="https://source.unsplash.com/TJgn1_dcE1g/200x150" alt="logo" href="https://unsplash.com/photos/2ZBK_-eqkwA" id="logo">
+    <button id="hamburger" class="menu-btn" onclick="hamburgerMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </button>
+    <nav id="nav-bar" role="navigation" class="">
+      <ul>
+        <li>
+          <a href="#landing" class="smoothScroll">Home</a>
         </li>
-        </a>
-        <li class="nav-link" id="video-nav">
-          <a href="#video" class="smoothScroll">video</a>
+        <li>
+          <a href="#video-section" class="smoothScroll">Video</a>
         </li>
-        </a>
-        <li class="nav-link" id="feature-nav">
-          <a href="#features" class="smoothScroll">feature</a>
+        <li>
+          <a href="#features-section" class="smoothScroll">Features</a>
         </li>
-        </a>
-        <li class="nav-link" id="order-nav">
-          <a href="#email" class="smoothScroll">order</a>
+        <li>
+          <a href="#preorder-section" class="smoothScroll">Order</a>
         </li>
-        </a>
-        <li class="nav-link" id="info-nav">
-          <a href="#info" class="smoothScroll">info</a>
-        </li>
-        </a>
+        <li>
+          <a href="#contacts-section" class="smoothScroll">Contacts</a>
+          <li>
       </ul>
-      <div id="hamburger" class="topnav"onclick="hamburgerMenu(this)">
-          <a href="javascript:void(0);" class="icon" onclick="unfoldMenu()">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
+
     </nav>
   </header>
-
-  </nav>
   <main>
     <!-- Landing area -->
     <div id="landing">
@@ -57,11 +47,14 @@
         <div id="landing-text-inner">
           <h1>Puppies Inc.</h1>
           <h2>Most technologically advanced puppies you ever seen!</h2>
-          <a href="#images" class="btn smoothScroll" id="view-puppies">Puppies</a>
+          <a href="#features-section" class="btn smoothScroll" id="view-puppies">Puppies</a>
         </div>
       </div>
       <div id="landing-image">
       </div>
+    </div>
+    <div id="header">
+      <h2 id="video-section">Video About Our Puppies</h2>
     </div>
     <div id="video">
       <iframe width="1245" height="700" src="https://www.youtube.com/embed/s5-oJbs5izQ" frameborder="0" allow="autoplay; encrypted-media"
@@ -71,49 +64,50 @@
     </div>
     <div id="images">
       <div id="header">
-
-        <h2 id="features">Our Puppies</h2>
+        <h2 id="features-section">Our Puppies Features</h2>
       </div>
 
-      <img src="https://source.unsplash.com/1600x900/?puppy,puppies" alt="">
+      <img class="photo" src="https://source.unsplash.com/1600x900/?puppy,puppies" alt="">
       <div class="feature">
         <h2>Puppy One</h2>
         <p class="text-reg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, modi.</p>
       </div>
-      <img src="https://source.unsplash.com/1600x900/?puppy,young" alt="">
+      <img class="photo" src="https://source.unsplash.com/1600x900/?puppy,young" alt="">
       <div class="feature">
         <h2>Puppy Two</h2>
         <p class="text-reg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, modi.</p>
       </div>
-      <img src="https://source.unsplash.com/1600x900/?puppy,dog" alt="">
+      <img class="photo" src="https://source.unsplash.com/1600x900/?puppy,dog" alt="">
       <div class="feature">
         <h2>Puppy Three</h2>
         <p class="text-reg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, modi.</p>
       </div>
-      <img src="https://source.unsplash.com/1600x900/?puppy,funny" alt="">
+      <img class="photo" src="https://source.unsplash.com/1600x900/?puppy,funny" alt="">
       <div class="feature">
         <h2>Puppy Four</h2>
         <p class="text-reg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, modi.</p>
       </div>
-      <img src="https://source.unsplash.com/1600x900/?puppy,dirty" alt="">
+      <img class="photo" src="https://source.unsplash.com/1600x900/?puppy,dirty" alt="">
       <div class="feature">
         <h2>Puppy Five</h2>
         <p class="text-reg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, modi.</p>
       </div>
     </div>
+    <div id="header">
+      <h2 id="preorder-section">Pre-Order</h2>
+    </div>
+    <form action="" id="email">
+      <h3 class="forEmail">Expected ship date TBD</h3>
+      <p class="text-gen">If you want to know when some of our Puppies will be avalaible, leave us your email and we will contact with your once
+        we will get the new batch.
+      </p>
+      <input type="email" placeholder="your.email@example.com">
+      <button type="submit" id="send" class="">Send</button>
+    </form>
   </main>
-  <form action="" id="email">
-    <h3 class="forEmail">Pre-Order</h3>
-    <p class="text-gen">If you want to preorder some of our Puppies, leave us your email and we will contact with your once we will get the new
-      batch.</p>
-    <input type="email" placeholder="your.email@example.com">
-    <button type="submit" id="send">send</button>
-  </form>
-  </form>
-
-  <footer id="info" class="toScroll">
+  <div id="contacts-section" class="toScroll">
     <h3>Contact Us</h3>
-    <p>Email or call uss to set up an appointment</p>
+    <p>Email or call us to set up an appointment.</p>
     <p>Email:
       <strong>eample@example.test</strong>
     </p>
@@ -124,7 +118,8 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d688556.5478885103!2d-122.342064!3d47.613028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C+WA!5e0!3m2!1sen!2sus!4v1529694483993"
         width="400" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-  </footer>
+  </div>
+
 
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
